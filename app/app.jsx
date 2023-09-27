@@ -1,0 +1,18 @@
+import ReactDOM from "react-dom";
+import React from "react";
+import { Header } from "./components/header.jsx";
+import { Article } from "./components/article.jsx";
+
+const header = "Рассказ";
+const article = "После одного из заседаний N-ского мирового съезда судьи собрались в совещательной комнате, чтобы снять свои мундиры, минутку отдохнуть и ехать домой обедать.";
+
+ReactDOM.createRoot(
+    
+    document.getElementById("app")
+)
+    .render(
+        <div>
+            <Header text={header} />
+            <Article text={article} />
+        </div>
+    );
