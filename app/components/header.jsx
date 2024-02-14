@@ -5,7 +5,16 @@ export class Header extends React.Component {
         super(props);
     }
     render() {
-        return <h2>{this.props.text}</h2>;
+        return <>
+        <div className="header-container">
+            <div className="menu">
+                <a href="">Каталог</a>
+                <a href="">О нас</a>
+                <a href="">Цены</a>
+            </div>
+            <span className="header-logo">{this.props.text}</span>
+        </div>
+        </>;
     }
 }
   

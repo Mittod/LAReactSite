@@ -1,18 +1,25 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import { Header } from "./components/header.jsx";
-import { Article } from "./components/article.jsx";
+import {Content} from "./components/content.jsx";
+import {About} from "./components/about.jsx";
 
-const header = "Рассказ";
-const article = "После одного из заседаний N-ского мирового съезда судьи собрались в совещательной комнате, чтобы снять свои мундиры, минутку отдохнуть и ехать домой обедать.";
 
-ReactDOM.createRoot(
-    
-    document.getElementById("app")
-)
-    .render(
-        <div>
-            <Header text={header} />
-            <Article text={article} />
-        </div>
-    );
+class App extends React.Component {
+
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return (
+            <div className="App">
+                <Header text="Legal Aliens"/>
+                <Content/>
+                <About/>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(<App/>, document.getElementById('app'))

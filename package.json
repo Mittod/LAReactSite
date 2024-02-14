@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "webpack serve --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "mongoose": "^7.5.3",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
