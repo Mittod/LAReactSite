@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/style.css";
 
 export class Content extends React.Component{
     constructor(props){
@@ -11,17 +12,20 @@ export class Content extends React.Component{
                 <div class="main-container">
                     <div class="image-full-size">
                         <h1 class="image-text large">
-                            Always<br/>strive <br/>and prosper!
+                            <span>Always</span><br/>strive &<br/>prosper!
                         </h1>
-                        <span className="image-text">
+                        <span className="image-text m-1">
                             The best wear shop since 1899
                         </span>
                     </div>
                     <div class="first-block">
-                        <div class="about"></div>
+                        <div class="brands">
+
+                        </div>
                     </div>
                 </div>
             </div>
         </>
+        
     }
 }

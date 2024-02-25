@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "./components/header.jsx";
 import {Content} from "./components/content.jsx";
 import {About} from "./components/about.jsx";
+import {Footer} from "./components/footer.jsx";
 
 
 class App extends React.Component {
@@ -17,6 +18,7 @@ class App extends React.Component {
                 <Header text="Legal Aliens"/>
                 <Content/>
                 <About/>
+                <Footer/>
             </div>
         );
     }

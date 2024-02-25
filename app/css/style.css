@@ -1,5 +1,10 @@
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Kode Mono";
+}
+
+*::selection{
+    background-color: var(--accent-color);
+    color: #ffffff;
 }
 
 html, body{
@@ -62,13 +67,18 @@ html, body{
     align-items: center;
     justify-content: center;
 }
-.image-text{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.image-text, .image-text span{
+    font-family: "Kode Mono";
+    font-style: normal;
+    font-weight: bold;
+}
+.image-text span{
+    color: #FFFFFF;
+    background-color: var(--accent-color);
 }
 .image-text.large{
-    font-weight: 500;
     font-size: 4em;
-    line-height: 105%;
+    line-height: 115%;
     margin: 2%;
 }
 
@@ -79,4 +89,125 @@ html, body{
 
 .image-text.small{
     
+}
+
+.first-block{
+    height: 200px;
+    
+}
+
+.about-block{
+    min-height: 50vh;
+    background-color: #43AA8B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-card{
+    width: 70vw;
+    min-width: 500px;
+    min-height: 500px;
+    height: 50vh;
+    background-color: #4DB999;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.buffer{
+    height: 10vh;
+    background-color: #dee2e5;
+}
+
+i{
+    color: #FFFFFF;
+    font-size: 64px;
+    margin: 10px;
+}
+
+.about-card h2{
+    justify-content: center;
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.about-card .about-cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    width: 400px;
+}
+
+.about-card span{
+    color: #FFFFFF;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.visual-tree{
+    display: flex;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.visual-tree .tree-trunk{
+    height: 100%;
+}
+
+.visual-tree .tree-trunk div{
+    border: 1px solid #FFFFFF;
+    border-width: 0 3px;
+    height: 90%;
+}
+
+
+/* Features */
+
+.full-w{
+    width: 100%;
+}
+
+.full-h{
+    height: 100%;
+}
+
+:root{
+    --margin-default: 16px;
+    --primary-color: #43AA8B;
+    --accent-color: #4DB999;
+    --background-color: #dee2e5;
+    --text-color: #222425;
+}
+
+.m-1{
+    margin: var(--margin-default) * 1;
+}
+
+.m-2{
+    margin: var(--margin-default) * 2;
+}
+
+.mx-1{
+    margin: 0 var(--margin-default);
+}
+.mx-2{
+    margin: 0 var(--margin-default) * 2 ;
+}
+
+.my-1{
+    margin: var(--margin-default) 0;
+}
+
+.my-2{
+    margin: var(--margin-default)*2 0;
 }
